@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dog.withd.Mapper.MapperUser">
+    <insert id="saveUser" parameterType="com.dog.withd.domain.User">
+    insert into test_user(
+    email,name,tel,password,reg_date, auth, update)values
+    (#{email},#{name},#{tel},#{password},#{reg_date,jdbcType=TIMESTAMP},#{auth},#{update,jdbcType=TIMESTAMP});
+    </insert>
+</mapper>

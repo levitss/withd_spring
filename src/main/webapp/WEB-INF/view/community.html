@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위드댕</title>
+    <link rel="stylesheet" href="comunity/styleCo.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="login.js"></script>
+    <header>
+        <h2 class="logo">With DANG</h2>
+        <div class="navigation">
+            <a href="main.jsp">댕댕여지도</a>
+            <a href="dangguen.html" class="danggeun">댕근마켓</a>
+            <a href="care.html" class="care">댕댕케어</a>
+            <a href="community.html" class="community">댕댕커뮤</a>
+            <a href="dangoffice.html" class="dangoffice">댕사무소</a>
+            <button class="btnLogin-popup">Login</button>
+        </div>
+    </header>
+</head>
+<body>
+<!--메인페이지를 해보겠읍니다.-->
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>댕댕커뮤</strong>
+            <p>우리 댕댕이 자랑부터 동네 소식까지!</p>
+        </div>
+        <div class="board_list_wrap">
+            <div class="board_list">
+                <div class="top">
+                    <div class="num">번호</div>
+                    <div class="title">제목</div>
+                    <div class="writer">닉네임</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
+                </div>
+                <div>
+                    <div class="num">5</div>
+                    <div class="title"><a href="view.html">^^행복한 하루.</a></div>
+                    <div class="writer">쫑어멈</div>
+                    <div class="date">2023.04.10</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">4</div>
+                    <div class="title"><a href="view.html">된장 있으신분?</a></div>
+                    <div class="writer">쫑애비</div>
+                    <div class="date">2023.04.10</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">3</div>
+                    <div class="title"><a href="view.html">강아지 입냄새가 너무 심해요 어떡하죠?</a></div>
+                    <div class="writer">쫑누나</div>
+                    <div class="date">2023.04.10</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">2</div>
+                    <div class="title"><a href="view.html">3월 소통왕을 찾습니다!!</a></div>
+                    <div class="writer">쫑오빠</div>
+                    <div class="date">2023.04.10</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">1</div>
+                    <div class="title"><a href="view.html">오늘 나랑 간식 뜯으실 분</a></div>
+                    <div class="writer">쫑이</div>
+                    <div class="date">2023.04.10</div>
+                    <div class="count">33</div>
+                </div>
+            </div>
+            <div class="board_page">
+                <a href="#" class="bt first"><<</a>
+                <a href="#" class="bt prev"><</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="bt next">></a>
+                <a href="#" class="bt last">>></a>
+            </div>
+            <div class="bt_wrap">
+                <a href="write.html" class="on">등록</a>
+                <!--<a href="#">수정</a>-->
+            </div>
+        </div>
+    </div>
+
+    
+<!--로그인 팝업-->
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>로그인</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">아이디 기억하기</label>
+                    <a href="#">비밀번호 찾기</a>
+                </div>
+                <button type="submit" class="btn">로그인</button>
+                <div class="login-register">
+                    <p>회원이 아니신가요?<a href="#" class="register-link"> 회원가입</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>회원가입</h2>
+<!--3열로 만들어야하는데 나중에 span으로 바꿔보거나 그리드 전에 저장 조지고 울지않기-->
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>이름</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="phone"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>연락처</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">회원가입 약관에 동의합니다.</label>
+                </div>
+                <button type="submit" class="btn">회원가입</button>
+                <div class="login-register">
+                    <p>이미 회원이신가요?<a href="#" class="login-link"> Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const wrapper = document.querySelector(".wrapper");
+        const loginLink = document.querySelector(".login-link");
+        const registerLink = document.querySelector(".register-link");
+        const btnPopup = document.querySelector(".btnLogin-popup");
+        const iconClose = document.querySelector(".icon-close");
+        registerLink.addEventListener("click", ()=> {
+            wrapper.classList.add("active");
+        });
+        loginLink.addEventListener("click", ()=> {
+            wrapper.classList.remove("active");
+        });
+        btnPopup.addEventListener("click", ()=> {
+            wrapper.classList.add("active-popup");
+        });
+        iconClose.addEventListener("click", ()=> {
+            wrapper.classList.remove("active-popup");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="/comunity/css.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">With DANG</h2>
+        <div class="navigation">
+            <a href="main.jsp">댕댕여지도</a>
+            <a href="dangguen.html" class="danggeun">댕근마켓</a>
+            <a href="care.html" class="care">댕댕케어</a>
+            <a href="community.html" class="community">댕댕커뮤</a>
+            <a href="dangoffice.html" class="dangoffice">댕사무소</a>
+            <button class="btnLogin-popup">Login</button>
+        </div>
+    </header>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>댕댕커뮤</strong>
+            <p>우리 댕댕이 자랑부터 동네 소식까지!</p>
+        </div>
+        <div class="board_list_wrap">
+            <div class="board_list">
+                <div class="top">
+                    <div class="num">번호</div>
+                    <div class="title">제목</div>
+                    <div class="writer">글쓴이</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
+                </div>
+                <div>
+                    <div class="num">5</div>
+                    <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
+                    <div class="writer">김쫑이</div>
+                    <div class="date">2023.04.14</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">4</div>
+                    <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
+                    <div class="writer">김쫑이</div>
+                    <div class="date">2023.04.14</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">3</div>
+                    <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
+                    <div class="writer">김쫑이</div>
+                    <div class="date">2023.04.14</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">2</div>
+                    <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
+                    <div class="writer">김쫑이</div>
+                    <div class="date">2023.04.14</div>
+                    <div class="count">33</div>
+                </div>
+                <div>
+                    <div class="num">1</div>
+                    <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
+                    <div class="writer">김쫑이</div>
+                    <div class="date">2023.04.14</div>
+                    <div class="count">33</div>
+                </div>
+            </div>
+            <div class="board_page">
+                <a href="#" class="bt first"><<</a>
+                <a href="#" class="bt prev"><</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="bt next">></a>
+                <a href="#" class="bt last">>></a>
+            </div>
+            <div class="bt_wrap">
+                <a href="write.html" class="on">등록</a>
+                <!--<a href="#">수정</a>-->
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>로그인</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">아이디 기억하기</label>
+                    <a href="#">비밀번호 찾기</a>
+                </div>
+                <button type="submit" class="btn">로그인</button>
+                <div class="login-register">
+                    <p>회원이 아니신가요?<a href="#" class="register-link"> 회원가입</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>회원가입</h2>
+<!--3열로 만들어야하는데 나중에 span으로 바꿔보거나 그리드 전에 저장 조지고 울지않기-->
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>이름</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="phone"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>연락처</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">회원가입 약관에 동의합니다.</label>
+                </div>
+                <button type="submit" class="btn">회원가입</button>
+                <div class="login-register">
+                    <p>이미 회원이신가요?<a href="#" class="login-link"> Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html> 

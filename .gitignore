@@ -36,3 +36,4 @@ build/
 
 src/main/webapp/WEB-INF/static/
 withd/src/main/resources/static/
+src/main/resources/static/
